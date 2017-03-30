@@ -85,6 +85,7 @@ var CastPlayer = function() {
 
     /** @type {Object} media contents from JSON */
     this.mediaContents = null;
+	this.mediaContents2 = null;
 
     /** @type {boolean} Fullscreen mode on/off */
     this.fullscreen = false;
@@ -902,17 +903,17 @@ CastPlayer.prototype.addVideoThumbs = function() {
 };
 
 CastPlayer.prototype.addVideoThumbs2 = function() {
-    this.mediaContents = mediaJSON2['categories'][0]['videos'];
+    this.mediaContents2 = mediaJSON2['categories'][0]['videos'];
     var ni = document.getElementById('carousel2');
     var newdiv = null;
     var divIdName = null;
-    for (var i = 0; i < this.mediaContents.length; i++) {
+    for (var i = 0; i < this.mediaContents2.length; i++) {
         newdiv = document.createElement('div');
         divIdName = 'thumb' + i + 'Div';
         newdiv.setAttribute('id', divIdName);
         newdiv.setAttribute('class', 'thumb');
         newdiv.innerHTML =
-            '<img src="' + this.mediaContents[i]['thumb'] +
+            '<img src="' + this.mediaContents2[i]['thumb'] +
             '" class="thumbnail">';
         newdiv.addEventListener('click', this.selectMedia.bind(this, i));
         ni.appendChild(newdiv);
