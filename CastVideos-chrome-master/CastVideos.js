@@ -12,6 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+// *******************************
+// Videoiden linkit koodin lopussa
+// *******************************
 
 'use strict';
 
@@ -958,12 +961,20 @@ CastPlayer.getErrorMessage = function(error) {
 /**
  * Hardcoded media json objects
  */
+
+// Vuoden 2016 videoiden linkit ja tiedot esimerkin mukaisesti
+
 var mediaJSON = { 'categories' : [{ 'name' : 'Movies',
     'videos' : [
+	    		// Videon kuvaus
         { 'description' : "Media Soft Day 2016   23.3.2016",
+	  		// Videon linkki
             'sources' : ['https://flash.metropolia.fi/streams/636/video/o_1af67suae17q81pt51giils21e267.mp4'],
+	 		// Esiintyjä
             'subtitle' : 'Visa Parviainen',
+	 		// Thumbnailkuva
             'thumb' : 'images/bunny.jpg',
+	 		// Videon otsikko
             'title' : 'Automatic security testing'
         },
         { 'description' : 'Media Soft Day 2016   23.3.2016',
@@ -992,12 +1003,19 @@ var mediaJSON = { 'categories' : [{ 'name' : 'Movies',
         }
     ]}]};
 
+// Vuoden 2017 videoiden linkit ja tiedot esimerkin mukaisesti
+
 var mediaJSON2 = { 'categories' : [{ 'name' : 'Movies',
     'videos' : [
+	    		// Videon kuvaus
         { 'description' : "Media Soft Day 2016   23.3.2016",
+	 		// Videon linkki
             'sources' : ['https://flash.metropolia.fi/streams/636/video/o_1af67suae17q81pt51giils21e267.mp4'],
+	 		// Esiintyjä
             'subtitle' : 'Visa Parviainen',
+	 		// Thumbnailkuva
             'thumb' : 'images/bunny.jpg',
+	 		// Videon otsikko
             'title' : 'Automatic security testing'
         },
         { 'description' : 'Media Soft Day 2016   23.3.2016',
