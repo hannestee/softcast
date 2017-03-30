@@ -101,11 +101,20 @@ var CastPlayer = function() {
 CastPlayer.prototype.initializeCastPlayer = function() {
 
     var options = {};
-
+/* Application ID
+    6F85A61F
+	Application Name
+    Tiimi4
+	Application Type
+    Styled Media Receiver
+	Status
+    Unpublished
+    This application is currently unpublished and can only be launched on your authorized 			     devices. Learn More */
+    
     // Set the receiver application ID to your own (created in the
     // Google Cast Developer Console), or optionally
     // use the chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID
-    options.receiverApplicationId = '4F8B3483';
+    options.receiverApplicationId = '6F85A61F';
 
     // Auto join policy can be one of the following three:
     // ORIGIN_SCOPED - Auto connect from same appId and page origin
