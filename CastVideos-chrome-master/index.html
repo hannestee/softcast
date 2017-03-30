@@ -2,21 +2,24 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="http-header; charset=utf-8" />
-<title>Soft Cast</title>
-<link rel="icon" type="image/x-icon" href="imagefiles/favicon.ico" />
-<link rel="icon" type="image/png" href="imagefiles/favicon-16x16.png" />
-<link rel="icon" type="image/png" href="imagefiles/favicon-32x32.png" />
-<link rel="icon" type="image/png" href="imagefiles/favicon-64x64.png" />
-<link rel="stylesheet" type="text/css" href="css/CastVideos.css">
-<link href="//fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext,greek-ext,latin-ext" rel="stylesheet" type="text/css">
-
-
-
+    <title>Soft Cast</title>
+    <link rel="icon" type="image/x-icon" href="imagefiles/favicon.ico" />
+    <link rel="icon" type="image/png" href="imagefiles/favicon-16x16.png" />
+    <link rel="icon" type="image/png" href="imagefiles/favicon-32x32.png" />
+    <link rel="icon" type="image/png" href="imagefiles/favicon-64x64.png" />
+    <!-- CSS tiedoston linkkki -->
+    <link rel="stylesheet" type="text/css" href="css/CastVideos.css">
+    <!-- Google font link -->
+    <link href="//fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext,greek-ext,latin-ext" rel="stylesheet" type="text/css">
 </head>
+    
 <body>
+      <!-- Header sekä logo -->
       <div id="top_header">
         <div class="logonpaikka"><img class="logo" src="images/logo.png"></div>
       </div>
+    
+    <!-- Sisältö -->
     <div class="content">
       <div id="main_video">
         <div class="imageSub"> <!-- Put Your Image Width -->
@@ -24,10 +27,10 @@
            <div class="label" id="playerstate">IDLE</div>
            <img src="images/bunny.jpg" id="video_image">
            <div id="video_image_overlay"></div>
-           <video id="video_element">
-           </video>
+           <video id="video_element"></video>
         </div>
-
+          
+        <!-- Media player -->
         <div id="media_control">
            <div id="play"></div>
            <div id="pause"></div>
@@ -46,26 +49,23 @@
            <div id="duration">00:00:00</div>
         </div>
       </div>
-    
+        
+      <!-- Videon tiedot -->
       <div id="media_info">
-        <div id="media_title">
-        </div>
-        <div id="media_subtitle">
-        </div>
-        <div id="media_desc">
-        </div>
-          <input type="button" id="hideshow" value="2016/2017">
+        <div id="media_title"></div>
+        <div id="media_subtitle"></div>
+        <div id="media_desc"></div>
+        <input type="button" id="hideshow" value="2016/2017">
       </div>
-
-      <div id="carousel">
-      </div>
-
-      <div id="carousel2" style="display: none">
-      </div>
+        
+      <!-- Muut videot -->
+      <div id="carousel"></div>
+      <div id="carousel2" style="display: none"></div>
     
-    <div class="paska">
-    <a class="twitter-timeline" data-width="300" data-height="1000" href="https://twitter.com/metropolia">Tweets by metropolia</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
+      <!-- Twitter widget -->
+      <div class="paska">
+        <a class="twitter-timeline" data-width="300" data-height="1000" href="https://twitter.com/metropolia">Tweets by metropolia</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
 
      <!-- <div id="footer">
 
@@ -92,7 +92,6 @@
             else {
                 div.style.display = 'block';
                 div2.style.display = 'none';
-
             }
         };
       </script>
